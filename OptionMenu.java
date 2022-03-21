@@ -54,7 +54,8 @@ public class OptionMenu extends Account  {
 		System.out.println("Select the option you want to use:");
 		System.out.println("1 - Checking account.");
 		System.out.println("2 - Saving account.");
-		System.out.println("3 - exit.");
+		System.out.println("3 - Bill payment");
+		System.out.println("4 - exit.");
 		System.out.print("type the number of your choice: ");
 		
 		
@@ -62,7 +63,7 @@ public class OptionMenu extends Account  {
 		
 		switch(selection) {
 		case 1:
-			GetChecking();
+			getChecking();
 			break;
 		
 		case 2:
@@ -80,7 +81,7 @@ public class OptionMenu extends Account  {
 	
 	/* defining the getCheking */
 	
-	public void GetChecking() {
+	public void getChecking() {
 		System.out.println("account options: ");
 		System.out.println("1 - view balance");
 		System.out.println("2 - withdraw funds");
@@ -95,22 +96,22 @@ public class OptionMenu extends Account  {
 		
 		case 1:
 			System.out.println("Current Account Balance: " + moneyFormat.format(getCheckingBalance()));
-			getAccountType();
+			getChecking();
 			
 		case 2: 
 			getCheckingWithdrawInput();
-			getAccountType();
+			getChecking();
 			
 		case 3: 
 			getCheckingDepositInput();
-			getAccountType();
+			getChecking();
 		
 		case 4: 
 			System.out.println("shuttinf off operations. Thank you for using this ATM");
 			
 		default:
 			System.out.println("\n" + "invalid choice. Please try again" + "\n");
-			getAccountType();
+			getChecking();
 			
 		}
 	}
@@ -131,17 +132,17 @@ public class OptionMenu extends Account  {
 		switch(selection) {
 			case 1:
 				System.out.println("saving account balance" + moneyFormat.format(getSavingBalance()));
-				getAccountType();
+				getSaving();
 				break;
 			
 			case 2:
 				getSavingWithdrawInput();
-				getAccountType();
+				getSaving();
 				break;
 				
 			case 3: 
 				getSavingDepositInput();
-				getAccountType();
+				getSaving();
 				break;
 				
 			case 4:

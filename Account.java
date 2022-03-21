@@ -3,10 +3,10 @@ package System;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Account {
+public class Account extends Client {
 	
-	private int customerNumber;
-	private int pinNumber;
+//	private int customerNumber;
+//	private int pinNumber;
 	private double checkingBalance = 0;
 	private double savingBalance = 0;
 	
@@ -15,29 +15,29 @@ public class Account {
 	
 	/*set customer number */
 	
-	public int setCustomerNumber(int customerNumber) {
-		this.customerNumber = customerNumber;
-		return customerNumber; 
-	}
-	
-	/*get the customer number */
-	
-	public int getCustomerNumber( ) {
-		return customerNumber;
-	}
-	
-	/*set pin number */
-	
-	public int setPinNumber(int pinNumber) {
-		this.pinNumber = pinNumber;
-		return pinNumber;	
-	}
-	
-	/*get pin number*/
-	
-	public int getPinNumber() {
-		return pinNumber;
-	}
+//	public int setCustomerNumber(int customerNumber) {
+//		this.customerNumber = customerNumber;
+//		return customerNumber; 
+//	}
+//	
+//	/*get the customer number */
+//	
+//	public int getCustomerNumber( ) {
+//		return customerNumber;
+//	}
+//	
+//	/*set pin number */
+//	
+//	public int setPinNumber(int pinNumber) {
+//		this.pinNumber = pinNumber;
+//		return pinNumber;	
+//	}
+//	
+//	/*get pin number*/
+//	
+//	public int getPinNumber() {
+//		return pinNumber;
+//	}
 	
 	/*get checking account balance */
 	
