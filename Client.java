@@ -7,7 +7,14 @@ public class Client {
 	private String cpf;
 	private int customerNumber;
 	private int pinNumber;
-	
+		
+//	public Client(String name, int indentifier, String i, int customerNumber, int pinNumber) {
+//		this.name = name;
+//		this.indentifier = indentifier;
+//		this.cpf = i;
+//		this.customerNumber = customerNumber;
+//		this.pinNumber = pinNumber;
+//	}
 	public String getName() {
 		return name;
 	}

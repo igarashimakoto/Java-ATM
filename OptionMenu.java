@@ -54,8 +54,7 @@ public class OptionMenu extends Account  {
 		System.out.println("Select the option you want to use:");
 		System.out.println("1 - Checking account.");
 		System.out.println("2 - Saving account.");
-		System.out.println("3 - Bill payment");
-		System.out.println("4 - exit.");
+		System.out.println("3 - exit.");
 		System.out.print("type the number of your choice: ");
 		
 		
